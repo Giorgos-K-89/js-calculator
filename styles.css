@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  /* background-color: rgb(176, 189, 146); */
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(148, 190, 156, 1) 49%,
+    rgba(176, 189, 146, 1) 79%
+  );
+}
+
+.calculator {
+  background-color: black;
+  width: 363px;
+  height: 500px;
+  margin: 100px auto;
+  display: grid;
+  word-wrap: break-word;
+  word-break: break-all;
+  grid-template: 1fr 1fr repeat(6, 50px) / repeat(4, 90px);
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.number {
+  background-color: rgb(94, 92, 92);
+}
+
+button,
+.dot {
+  background-color: rgb(56, 55, 55);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-column: span 4;
+  background-color: rgb(37, 37, 37);
+  font-size: 2rem;
+  padding: 0 15px 15px 15px;
+}
+
+.equals {
+  background-color: aquamarine;
+  color: rgb(37, 37, 37);
+}
+.side-output {
+  font-size: 1.5rem;
+  padding-bottom: 0px;
+}
+
+.number:hover {
+  background-color: rgb(56, 55, 55);
+}
+
+.dot:hover {
+  background-color: rgb(94, 92, 92);
+}
+.opt:hover {
+  background-color: rgb(94, 92, 92);
+}
+.operation:hover {
+  background-color: rgb(94, 92, 92);
+}
+.equals:hover {
+  background-color: rgb(134, 218, 188);
+}
